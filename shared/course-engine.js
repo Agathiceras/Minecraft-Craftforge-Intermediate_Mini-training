@@ -8,6 +8,8 @@
 const C = window.COURSE, UI = C.ui;
 const tx = (k, o) => String(UI[k]).replace(/\{(\w+)\}/g, (s, x) => o && x in o ? o[x] : s);
 document.documentElement.lang = C.lang;
+// Arabic and other right-to-left languages: COURSE.dir = 'rtl' in the language file
+if (C.dir === 'rtl') document.documentElement.dir = 'rtl';
 document.title = `${C.title} · ${UI.pageTitle}`;
 document.documentElement.style.setProperty('--course', C.color);
 
