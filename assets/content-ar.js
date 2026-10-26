@@ -1,9 +1,8 @@
 /* ============================================================
-   EM course training · Minecraft CraftForge Intermediate [2227 · ENG] · ARABIC (RTL) · Modern Standard Arabic (GCC)
+   EM course training · Minecraft CraftForge Intermediate [2244 · ENG] · ARABIC (RTL) · Modern Standard Arabic (GCC)
    Translated from content-en.js. Translate only the text inside quotes / backticks. Keep HTML tags, {placeholders},
    keys (t:, id:, a:…), links, file names, commands and the 'yes' / 'no' answer keys unchanged.
    The Backoffice link changes by region (see COURSE.code and the 'bo' section).
-   TODO: replace the Backoffice code and link (2226 / 2227) with the Arabic (GCC) course when it exists.
    ============================================================ */
 window.COURSE = { lang: 'ar', dir: 'rtl' };
 
@@ -66,12 +65,12 @@ COURSE.ui = {
 
 /* ---------------- Course ---------------- */
 COURSE.id = 'mcint';
-COURSE.code = '2227';
+COURSE.code = '2244';
 COURSE.title = 'Minecraft CraftForge Intermediate';
 COURSE.color = '#0EA5E9';
 
 COURSE.home = {
-  kicker: '🎓 تدريب الدورة · [2227]',
+  kicker: '🎓 تدريب الدورة · [2244]',
   title: 'Minecraft CraftForge <span class="hl">Intermediate</span>',
   lead: 'للطلاب من عمر 10 إلى 12 سنة: يكتبون قوانين عالم Minecraft باستخدام data packs، وبرامج Python تبني الجسور والأبراج وعوالم كاملة. وحدتان: محتوى الدورة والجانب التقني للدروس.',
   facts: [
@@ -133,7 +132,7 @@ COURSE.modules = [
       ]},
       { id:'bo', e:'📘', title:'راجع الدروس في Backoffice', blocks:[
         { t:'p', html:'قبل الاختبار، افتح الدورة في Backoffice واقرأ الدروس بالسرعة التي تناسبك — بطاقات الأنشطة وملاحظات المعلم كلها موجودة هناك. لا يوجد وقت محدّد.' },
-        { t:'link', href:'https://bo.kodland.org/courses/2227', e:'📘', title:'افتح الدورة في Backoffice', small:'[2227] Minecraft CraftForge Intermediate — الدروس وملاحظات المعلم الخاصة بها' },
+        { t:'link', href:'https://bo.kodland.org/courses/2244', e:'📘', title:'افتح الدورة في Backoffice', small:'[2244] Minecraft CraftForge Intermediate — الدروس وملاحظات المعلم الخاصة بها' },
         { t:'callout', kind:'warn', e:'🔄', html:'سيستمر تحديث محتوى الدروس في Backoffice بناءً على آراء الطلاب والمعلمين. كلما تغيّر شيء، سيتم إبلاغك مسبقًا لتتمكّن من التحضير للدرس.' }
       ]}
     ]},

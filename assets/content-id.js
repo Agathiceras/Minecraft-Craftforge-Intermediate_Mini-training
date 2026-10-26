@@ -1,9 +1,8 @@
 /* ============================================================
-   EM course training · Minecraft CraftForge Intermediate [2227 · ENG] · INDONESIAN
+   EM course training · Minecraft CraftForge Intermediate [2242 · ENG] · INDONESIAN
    Translated from content-en.js. Translate only the text inside quotes / backticks. Keep HTML tags, {placeholders},
    keys (t:, id:, a:…), links, file names, commands and the 'yes' / 'no' answer keys unchanged.
    The Backoffice link changes by region (see COURSE.code and the 'bo' section).
-   TODO: replace the Backoffice code and link (2226 / 2227) with the Indonesian course when it exists.
    ============================================================ */
 window.COURSE = { lang: 'id' };
 
@@ -66,12 +65,12 @@ COURSE.ui = {
 
 /* ---------------- Course ---------------- */
 COURSE.id = 'mcint';
-COURSE.code = '2227';
+COURSE.code = '2242';
 COURSE.title = 'Minecraft CraftForge Intermediate';
 COURSE.color = '#0EA5E9';
 
 COURSE.home = {
-  kicker: '🎓 Pelatihan kursus · [2227]',
+  kicker: '🎓 Pelatihan kursus · [2242]',
   title: 'Minecraft CraftForge <span class="hl">Intermediate</span>',
   lead: 'Untuk siswa usia 10–12 tahun: mereka menulis hukum dunia Minecraft dengan data pack dan program Python yang membangun jembatan, menara, hingga dunia utuh. Dua modul: materi kursus dan sisi teknis pelajaran.',
   facts: [
@@ -133,7 +132,7 @@ COURSE.modules = [
       ]},
       { id:'bo', e:'📘', title:'Pelajari pelajarannya di Backoffice', blocks:[
         { t:'p', html:'Sebelum evaluasi, buka kursusnya di Backoffice dan baca pelajaran-pelajarannya sesuai kecepatan Anda — semua kartu aktivitas dan Teacher Notes ada di sana. Tidak ada batas waktu.' },
-        { t:'link', href:'https://bo.kodland.org/courses/2227', e:'📘', title:'Buka kursus di Backoffice', small:'[2227] Minecraft CraftForge Intermediate — pelajaran dan Teacher Notes-nya' },
+        { t:'link', href:'https://bo.kodland.org/courses/2242', e:'📘', title:'Buka kursus di Backoffice', small:'[2242] Minecraft CraftForge Intermediate — pelajaran dan Teacher Notes-nya' },
         { t:'callout', kind:'warn', e:'🔄', html:'Konten pelajaran di Backoffice akan terus diperbarui berdasarkan umpan balik dari siswa dan tutor. Setiap kali ada perubahan, Anda akan diberi tahu lebih dulu agar bisa menyiapkan pelajarannya.' }
       ]}
     ]},

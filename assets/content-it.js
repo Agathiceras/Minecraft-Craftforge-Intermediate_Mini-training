@@ -1,9 +1,8 @@
 /* ============================================================
-   EM course training · Minecraft CraftForge Intermediate [2227 · ENG] · ITALIAN
+   EM course training · Minecraft CraftForge Intermediate [2241 · ENG] · ITALIAN
    Translated from content-en.js. Translate only the text inside quotes / backticks. Keep HTML tags, {placeholders},
    keys (t:, id:, a:…), links, file names, commands and the 'yes' / 'no' answer keys unchanged.
    The Backoffice link changes by region (see COURSE.code and the 'bo' section).
-   TODO: replace the Backoffice code and link (2226 / 2227) with the Italian course when it exists.
    ============================================================ */
 window.COURSE = { lang: 'it' };
 
@@ -66,12 +65,12 @@ COURSE.ui = {
 
 /* ---------------- Course ---------------- */
 COURSE.id = 'mcint';
-COURSE.code = '2227';
+COURSE.code = '2241';
 COURSE.title = 'Minecraft CraftForge Intermediate';
 COURSE.color = '#0EA5E9';
 
 COURSE.home = {
-  kicker: '🎓 Formazione sul corso · [2227]',
+  kicker: '🎓 Formazione sul corso · [2241]',
   title: 'Minecraft CraftForge <span class="hl">Intermediate</span>',
   lead: 'Per studenti di 10–12 anni: scrivono le leggi del mondo di Minecraft con i data pack e con programmi Python che costruiscono ponti, torri e mondi interi. Due moduli: i contenuti del corso e gli aspetti tecnici delle lezioni.',
   facts: [
@@ -133,7 +132,7 @@ COURSE.modules = [
       ]},
       { id:'bo', e:'📘', title:'Ripassa le lezioni in Backoffice', blocks:[
         { t:'p', html:'Prima della verifica, apri il corso in Backoffice e leggi le lezioni con calma — trovi lì tutte le schede attività e le note per il tutor. Non c’è un limite di tempo.' },
-        { t:'link', href:'https://bo.kodland.org/courses/2227', e:'📘', title:'Apri il corso in Backoffice', small:'[2227] Minecraft CraftForge Intermediate — le lezioni e le relative note per il tutor' },
+        { t:'link', href:'https://bo.kodland.org/courses/2241', e:'📘', title:'Apri il corso in Backoffice', small:'[2241] Minecraft CraftForge Intermediate — le lezioni e le relative note per il tutor' },
         { t:'callout', kind:'warn', e:'🔄', html:'I contenuti delle lezioni in Backoffice continueranno a essere aggiornati grazie al feedback di studenti e tutor. Ogni volta che qualcosa cambia, riceverai un avviso in anticipo per preparare la lezione.' }
       ]}
     ]},
