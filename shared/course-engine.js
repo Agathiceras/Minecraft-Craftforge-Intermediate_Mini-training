@@ -95,7 +95,19 @@ function takeUrlProgress(){
     try { P = mergeP(P, JSON.parse(raw)); STORE.set(PKEY, JSON.stringify(P)); } catch(e){}
     q.delete('p'); history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q.toString() : '') + location.hash); } catch(e){}
 }
-function progressParam(){ return 'p=' + encodeURIComponent(JSON.stringify(P)); }
+function progressParam(){ return 'p=' + encodeURIComponent(JSON.stringify(P)) + (DEV_ALLOWED ? '&dev=1' : ''); }
+
+/* ---------- Developer mode: reviewers only ----------
+   Shift+D and the "Developer" link work only when the page is opened with ?dev=1
+   (same rule as the Attendance training). Turning developer mode off restores the
+   real progress saved before it was turned on, so it can never be used to skip modules. */
+const DEV_ALLOWED = /[?&]dev=1(&|$)/.test(location.search);
+const DEV_BACKUP = PKEY + '-devbackup';
+function restoreRealProgress(){
+  const b = STORE.get(DEV_BACKUP); let real = {};
+  try { real = b ? (JSON.parse(b) || {}) : {}; } catch(e){ real = {}; }
+  delete real.dev; P = real; STORE.remove(DEV_BACKUP);
+}
 
 /* =========================================================
    CONTENT BLOCKS — each block of a section has a type (t)
@@ -362,9 +374,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
    "🛠 Developer" link at the bottom (code EMDEV), or Shift+D three times.
    ========================================================= */
 function setDev(on){
-  if (on){ MODS.forEach(m => { if (!passed(m.id)) P[m.id] = { passed:true, score:100 }; });
+  if (on && !DEV_ALLOWED) return;
+  if (on){ STORE.set(DEV_BACKUP, JSON.stringify(P));
+    MODS.forEach(m => { if (!passed(m.id)) P[m.id] = { passed:true, score:100 }; });
     P.flags = Object.assign({}, P.flags); Object.keys(SIMS).forEach(f => P.flags[f] = true); P.dev = true; }
-  else delete P.dev;
+  else restoreRealProgress();
   saveP(); devBadge(); route();
 }
 function devBadge(){
@@ -392,18 +406,21 @@ function openDev(unlockedPanel){
   $('#devToggle').onclick = () => { closeModal(); setDev(!P.dev); };
   $('#devReset').onclick = () => { closeModal(); P = {}; saveP(); devBadge(); go(''); route(); };
 }
-document.addEventListener('click', e => { if (e.target.closest('#devLink') || e.target.closest('#devBadge')) openDev(false); });
+document.addEventListener('click', e => { if (!DEV_ALLOWED) return; if (e.target.closest('#devLink') || e.target.closest('#devBadge')) openDev(false); });
 let dk = [];
 document.addEventListener('keydown', e => {
   if (!(e.shiftKey && e.key.toLowerCase() === 'd')) return;
+  if (!DEV_ALLOWED) return;
   const now = Date.now(); dk = dk.filter(x => now - x < 1200); dk.push(now);
   if (dk.length >= 3){ dk = []; openDev(true); }
 });
 
 $('#footTxt').textContent = UI.footer;
 $('#devLink').textContent = UI.devLink;
+{ const dl = document.getElementById('devLink'); if (dl && !DEV_ALLOWED) dl.style.display = 'none'; }
 loadP();
 takeUrlProgress();
+if (P.dev && !DEV_ALLOWED){ restoreRealProgress(); STORE.set(PKEY, JSON.stringify(P)); }
 lmsReady = true; lmsSend('ready'); lmsSync();
 devBadge();
 route();
