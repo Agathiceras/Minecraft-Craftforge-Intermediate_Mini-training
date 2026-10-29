@@ -35,32 +35,32 @@ CONTENT.ui = {
 CONTENT.flows = {
   /* Beginner: part 1 = the skin as a Minecraft skin project (Lesson 1); part 2 = a build screenshot as an Image project (Lesson 2 and homework) */
   image: {
-    card: { gif: 'assets/crafters-skin.gif', label: 'رابط السكن الخاص بي على Kodland Sparks', placeholder: 'الصق رابط السكن الخاص بك هنا' },
+    card: { gif: 'assets/crafters-skin.gif', label: 'رابط السكين الخاص بي على Kodland Sparks', placeholder: 'الصق رابط السكين الخاص بك هنا' },
     welcome: {
       kicker: '⚡ محاكاة · Minecraft CraftForge Beginner',
-      title: 'انشر <span>سكنًا وبناءً</span> على Kodland Sparks',
-      lead: 'في Minecraft CraftForge Beginner، ينشر الطلاب أعمالهم على Kodland Sparks بدءًا من الدرس 1: أولًا <b>السكن (skin)</b> الخاص بهم، ثم لقطات شاشة لأبنيتهم كمشاريع <b>Image</b>. ثم يلصقون رابط المشروع في بطاقة الدرس. هنا تؤدّي دور لوكاس، أحد الطلاب.',
+      title: 'انشر <span>سكينًا وبناءً</span> على Kodland Sparks',
+      lead: 'في Minecraft CraftForge Beginner، ينشر الطلاب أعمالهم على Kodland Sparks بدءًا من الدرس 1: أولًا <b>السكين (skin)</b> الخاص بهم، ثم لقطات شاشة لأبنيتهم كمشاريع <b>Image</b>. ثم يلصقون رابط المشروع في بطاقة الدرس. هنا تؤدّي دور لوكاس، أحد الطلاب.',
       seeTitle: 'ما الذي ستفعله',
-      see: ['انشر سكنًا كمشروع <b>Minecraft skin</b> واختر من يستطيع رؤيته.', 'اعثر على الرابط: <b>My projects ← المشروع المنشور ← العنوان في شريط المتصفح</b>.', 'الصق الرابط في بطاقة الدرس على منصة Kodland.', 'انشر لقطة شاشة لبناء كمشروع <b>Image</b>، وأصلح رابطًا لا يستطيع أحد غير الطالب فتحه.'],
+      see: ['انشر سكينًا كمشروع <b>Minecraft skin</b> واختر من يستطيع رؤيته.', 'اعثر على الرابط: <b>My projects ← المشروع المنشور ← العنوان في شريط المتصفح</b>.', 'الصق الرابط في بطاقة الدرس على منصة Kodland.', 'انشر لقطة شاشة لبناء كمشروع <b>Image</b>، وأصلح رابطًا لا يستطيع أحد غير الطالب فتحه.'],
       how: 'تُريك بطاقة إرشادية كل خطوة. انقر على المكان المميَّز. تستغرق نحو 5 دقائق.',
       start: 'ابدأ المحاكاة ←'
     },
     steps: {
-      start: { title: 'سكن لوكاس جاهز', text: 'رسم لوكاس شخصيته: ملف سكن بصيغة PNG بمقاس 64×64. الآن ينشره على Kodland Sparks، ليتمكّن من ارتدائه في المشغّل وإرسال رابطه في بطاقة الدرس.' },
+      start: { title: 'سكين لوكاس جاهز', text: 'رسم لوكاس شخصيته: ملف سكين بصيغة PNG بمقاس 64×64. الآن ينشره على Kodland Sparks، ليتمكّن من ارتدائه في المشغّل وإرسال رابطه في بطاقة الدرس.' },
       navPublish: { title: 'Publish project', text: 'في الشريط العلوي من Sparks، انقر <b>Publish project</b>.' },
-      typeSkin: { title: 'نوع المشروع: Minecraft skin', text: 'هناك ثمانية أنواع من المشاريع. يُنشر السكن كمشروع <b>Minecraft skin</b>: يعرضه Sparks على نموذج ثلاثي الأبعاد. انقر عليه.' },
+      typeSkin: { title: 'نوع المشروع: Minecraft skin', text: 'هناك ثمانية أنواع من المشاريع. يُنشر السكين كمشروع <b>Minecraft skin</b>: يعرضه Sparks على نموذج ثلاثي الأبعاد. انقر عليه.' },
       title: { title: 'أعطه اسمًا', text: 'انقر على حقل العنوان. المشروع الذي يحمل اسمًا واضحًا يسهل العثور عليه لاحقًا — على الطالب وعليك.' },
-      model: { title: 'Steve أو Alex', text: 'يحدّد <b>Model</b> شكل الجسم الذي يُعرض عليه السكن: <b>Steve</b> (ذراعان عاديتان) أو <b>Alex</b> (ذراعان نحيفتان). يكون Steve مختارًا افتراضيًا.' },
-      upload: { title: 'ملف السكن (PNG)', text: 'انقر <b>Choose file</b> وأضف السكن: ملف <b>PNG بمقاس 64×64</b> (المقاس القديم 64×32 يعمل أيضًا).' },
+      model: { title: 'Steve أو Alex', text: 'يحدّد <b>Model</b> شكل الجسم الذي يُعرض عليه السكين: <b>Steve</b> (ذراعان عاديتان) أو <b>Alex</b> (ذراعان نحيفتان). يكون Steve مختارًا افتراضيًا.' },
+      upload: { title: 'ملف السكين (PNG)', text: 'انقر <b>Choose file</b> وأضف السكين: ملف <b>PNG بمقاس 64×64</b> (المقاس القديم 64×32 يعمل أيضًا).' },
       visibility: { title: 'من يستطيع رؤيته', text: '<ul><li><b>Public</b>: في الصفحة الرئيسية وفي ملف الأعمال العام.</li><li><b>Friends only</b>: الأصدقاء والمعلمون والطالب.</li><li><b>Only me</b>: لا يستطيع أحد غير الطالب فتح الرابط — ولا حتى أنت.</li></ul>المهم أن <b>تستطيع أنت فتح الرابط</b>.' },
       visPublic: { title: 'اختر Public', text: 'يريد لوكاس أن يرى اللاعبون الآخرون شخصيته. انقر <b>Public</b>.' },
       toggles: { title: 'الخيارات في النهاية', text: '<ul><li><b>Request feedback</b>: يستطيع المؤلّفون الآخرون ترك تغذية راجعة منظّمة (للمشاريع العامة فقط).</li><li><b>Others can modify this project</b>: مفعّل افتراضيًا — يستطيع الآخرون فتح نسختهم الخاصة؛ ويبقى الأصل كما هو.</li><li><b>Discord selection</b>: تُنشر أفضل المشاريع العامة في اليوم على Discord.</li></ul>' },
       publish: { title: 'Publish', text: 'انقر <b>1× 💎 Publish</b>. النشر يمنح أيضًا بلّورة.' },
-      findMy: { title: 'أين الرابط؟', text: 'نُشر السكن. الآن يحتاج الطالب إلى رابطه. الرابط ليس نصًا يُنسخ من مكان ما: إنه عنوان صفحة المشروع. اذهب أولًا إلى <b>My projects</b>.' },
-      openSkin: { title: 'افتح المشروع المنشور', text: 'يعرض الملف الشخصي مشاريع الطالب. انقر على السكن الذي نشرته للتوّ.' },
+      findMy: { title: 'أين الرابط؟', text: 'نُشر السكين. الآن يحتاج الطالب إلى رابطه. الرابط ليس نصًا يُنسخ من مكان ما: إنه عنوان صفحة المشروع. اذهب أولًا إلى <b>My projects</b>.' },
+      openSkin: { title: 'افتح المشروع المنشور', text: 'يعرض الملف الشخصي مشاريع الطالب. انقر على السكين الذي نشرته للتوّ.' },
       copy: { title: 'انسخ الرابط من شريط المتصفح', text: 'صفحة المشروع مفتوحة. رابطها هو العنوان في <b>شريط المتصفح</b>: <code>portfolio.kodland.org/nickname/…</code>. انقر على الشريط لتحديده وانسخه (Ctrl + C / Cmd + C).' },
       toCard: { title: 'اذهب إلى الدرس على المنصة', text: 'النشر على Sparks وإرسال الرابط على منصة Kodland <b>خطوتان مختلفتان</b>. افتح علامة تبويب الدرس.' },
-      paste: { title: 'الصق الرابط في البطاقة', text: 'هذه هي البطاقة <b>«سكن الصانع»</b> على المنصة. انقر على الحقل <b>«رابط السكن الخاص بي على Kodland Sparks»</b> لتلصق الرابط (Ctrl + V / Cmd + V). يوضع هنا الرابط فقط. تحقّق في Backoffice من أن الروابط وصلت فعلًا.' },
+      paste: { title: 'الصق الرابط في البطاقة', text: 'هذه هي البطاقة <b>«سكين الصانع»</b> على المنصة. انقر على الحقل <b>«رابط السكين الخاص بي على Kodland Sparks»</b> لتلصق الرابط (Ctrl + V / Cmd + V). يوضع هنا الرابط فقط. تحقّق في Backoffice من أن الروابط وصلت فعلًا.' },
       imageIntro: { title: 'من الدرس 2: الأبنية كمشاريع Image', text: 'من الدرس 2، ينشر الطلاب أيضًا <b>لقطات شاشة لأبنيتهم</b> (F5 لرؤية نفسك، وF1 لإخفاء الواجهة). أنهى لوكاس للتوّ برج مراقبة. عُد إلى علامة تبويب Kodland Sparks.' },
       navPublish2: { title: 'Publish project', text: 'انقر <b>Publish project</b> مرة أخرى.' },
       typeImage: { title: 'نوع المشروع: Image', text: 'تُنشر لقطة الشاشة كمشروع <b>Image</b>. انقر عليه.' },
@@ -79,7 +79,7 @@ CONTENT.flows = {
       kicker: '🏁 اكتملت المحاكاة',
       title: 'أنت تعرف الآن كيف تُنشر <span>أعمال Minecraft</span>',
       intro: 'هذا ما يفعله الطلاب في كل مرة يطلب منهم الدرس النشر:',
-      points: ['السكن: <b>Publish project</b> ← <b>Minecraft skin</b> ← الاسم ← Model (Steve/Alex) ← PNG بمقاس 64×64 ← <b>Publish</b>.', 'البناء: لقطة شاشة (F5، F1) ← <b>Publish project</b> ← <b>Image</b> ← الاسم ← Drawing ← <b>Publish</b>.', 'الرابط: <b>My projects ← المشروع المنشور ← انسخ العنوان من شريط المتصفح</b>، ثم الصقه في بطاقة الدرس على المنصة. النشر وإرسال الرابط خطوتان مختلفتان.', '<b>Private project</b> = Only me: My projects ← المشروع ← Edit ← Public ← Publish. يبقى الرابط كما هو.'],
+      points: ['السكين: <b>Publish project</b> ← <b>Minecraft skin</b> ← الاسم ← Model (Steve/Alex) ← PNG بمقاس 64×64 ← <b>Publish</b>.', 'البناء: لقطة شاشة (F5، F1) ← <b>Publish project</b> ← <b>Image</b> ← الاسم ← Drawing ← <b>Publish</b>.', 'الرابط: <b>My projects ← المشروع المنشور ← انسخ العنوان من شريط المتصفح</b>، ثم الصقه في بطاقة الدرس على المنصة. النشر وإرسال الرابط خطوتان مختلفتان.', '<b>Private project</b> = Only me: My projects ← المشروع ← Edit ← Public ← Publish. يبقى الرابط كما هو.'],
       back: 'عُد إلى التدريب: أصبح اختبار الوحدة متاحًا الآن.',
       again: '↺ أعد المحاكاة'
     }

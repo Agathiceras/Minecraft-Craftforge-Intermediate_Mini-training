@@ -89,9 +89,9 @@ COURSE.notes = [
 /* ---------------- Modules ---------------- */
 COURSE.modules = [
   { id:'m1', n:1, e:'📜', color:'#0EA5E9', title:'The course content',
-    desc:'The general course details, what the student achieves, and the first lessons of Module 1.',
-    obj:'Get ready to teach the first lessons of Minecraft CraftForge Intermediate. In them, students aged 10–12 create their first laws for the Minecraft world in a data pack — a recipe, a drop and commands on entering the world — and publish them in Kodland Sparks.',
-    offer:[['🧱','Know the general course details and what the student achieves.'],['📖','Know what happens in each of the first lessons.'],['📦','Understand what a data pack is and how students work with it.'],['📘','Review the lessons and their Teacher Notes in Backoffice.']],
+    desc:'The general course details, what the student achieves, and the first lesson of Module 1.',
+    obj:'Get ready to teach the first lesson of Minecraft CraftForge Intermediate. In it, students aged 10–12 create their first law for the Minecraft world — a recipe in a data pack — test it in the game and publish it in Kodland Sparks.',
+    offer:[['🧱','Know the general course details and what the student achieves.'],['📖','Know what happens in the first lesson.'],['📦','Understand what a data pack is and how students work with it.'],['📘','Review the first lesson and its Teacher Notes in Backoffice.']],
     sections:[
       { id:'ov', e:'🧱', title:'The course', blocks:[
         { t:'meta', items:[['🧒','Age','10–12 years'],['⏱️','Lesson','90 min'],['📚','Programme','40 lessons · 10 modules'],['🐍','Language','Python']] },
@@ -113,8 +113,8 @@ COURSE.modules = [
           ['🧠','Skills for life','Creativity, teamwork (testing each other’s projects), communication, and critical thinking: finding bugs and evaluating Sparks AI answers instead of copying them.']
         ]}
       ]},
-      { id:'les', e:'📖', title:'The first lessons', blocks:[
-        { t:'p', html:'Module 1, <b>“Code of the World. First Programs and World Laws”</b>, ends with the project <b>“Code Monument”</b>. The first two lessons are about <b>world laws in a data pack</b>; Python programs start right after them. Open each lesson and read what you need to know, the key result, your role and the points to watch out for.' },
+      { id:'les', e:'📖', title:'The first lesson', blocks:[
+        { t:'p', html:'Module 1, <b>“Code of the World. First Programs and World Laws”</b>, ends with the project <b>“Code Monument”</b>. The first lesson is about <b>world laws in a data pack</b>. Open it and read what you need to know, the key result, your role and the points to watch out for.' },
         { t:'lessons', key:'m1', items:[
           { tab:'M1L1', e:'📜', h:'Lesson 1 — First Trace in the World’s Code', p:'The first lesson of the course (8 cards and homework). Students launch the launcher, meet the group, try the law trainer, enter the world through the Nether, create their first law — a recipe — in a data pack, test it, and publish it in Sparks. Then they plan a base with Sparks AI and build it.',
             acc:[['📚','What you need to know','<ul><li>A <b>data pack</b> is a set of laws for the world. Laws are created outside the world, in the launcher studio, and the world runs them every time you enter.</li><li>Kinds of laws: <b>recipe</b>, <b>drop</b>, <b>command</b> on entering, <b>achievement</b>. Today: a recipe.</li><li>Path: <b>Esc</b> and exit the world saving → <b>Create → Data packs → Create data pack → Empty</b> → <b>Add → Recipe</b> → crafting table, items, result → <b>Save</b>.</li><li>The world code is entered on the <b>Play</b> tab. Students build in creative mode.</li></ul>'],
@@ -122,17 +122,11 @@ COURSE.modules = [
                  ['🧑‍🏫','Your role','<ul><li>Get to know the group while the game downloads; use names all lesson.</li><li>Say the goal out loud: “Today everyone will create their own law for Minecraft, test it in the game and publish it in the portfolio.”</li><li>Don’t dictate recipes: ideas should be different — that’s what makes the project personal. Ask: “Why this item? Who will need it?”</li><li><b>Planned check:</b> remove one item from the crafting table → the reward disappears. Ask why, then use the four questions. Praise the student who finds the cause, not only the one who succeeds first time.</li></ul>'],
                  ['📌','Watch out','<ul><li>The data pack doesn’t save → one of the three parts of the form is empty.</li><li>The law doesn’t work → it was saved with the world open: exit and enter again.</li><li>The recipe doesn’t craft → items not in the same layout as in the form, or crafted in the inventory instead of on a crafting table.</li><li>The link doesn’t open → “Who can see it?” was not <b>Everyone</b>: publish again.</li></ul>'],
                  ['⚙️','Technical aspects','<ul><li>A day before, send the launcher links to the group chat.</li><li>Go through the whole path yourself: world code → shore → exit saving → data pack with a recipe → back into the world → crafting table → reward → publish in Sparks.</li><li>World code: <b>Welcome to KodlandCraft</b>.</li><li>Homework: add one more law (change the recipe, a new recipe, or a command/drop), test it, publish the update and send the link.</li></ul>']] },
-          { tab:'M1L2', e:'🏘️', h:'Lesson 2 — The Way to the Square', p:'Students learn the difference between a <b>command</b> and a <b>law</b>. A command in the chat changes the world at once, but only once; a law in the data pack is remembered and run by the world itself. They add two new kinds of laws to the same data pack: a <b>drop</b> and <b>commands on entering the world</b>.',
-            acc:[['📚','What you need to know','<ul><li>Chat commands start with a slash: <code>/time set day</code>, <code>/give @s diamond 4</code>, <code>/effect give @s speed 15 1</code>.</li><li>The experiment: speed for 15 seconds ends, and the world “forgets” the command. A command is said once; a law is kept always.</li><li><b>Drop</b>: Edit → Add → <b>+ Drop</b> → block → what drops → Save. In <b>creative mode nothing drops</b> (planned moment): test with <code>/gamemode survival</code>, then go back with <code>/gamemode creative</code>.</li><li><b>Commands on entering</b>: Add → <b>+ Command</b>, written <b>without a slash</b> and with <b>@a</b> instead of @s. They run every time you enter the world.</li></ul>'],
-                 ['🎯','Key result','<ul><li>Two chat commands worked (day and diamonds) and the student explains why the speed ended.</li><li>🏁 The <b>link to the updated data pack with a working drop</b> is in the task by about 00:45.</li><li>An entry ritual with at least two commands, tested by entering again, and the student decided what to take from the Sparks advice.</li></ul>'],
-                 ['🧑‍🏫','Your role','<ul><li>Start with the homework: 2–3 students show which law they added and how they checked it.</li><li>Don’t dictate commands straight away: first let them try with the hint, then open the full command.</li><li>Before the drop and the ritual, show briefly on your screen where to start.</li><li>Give one minute to find why nothing dropped; if nobody finds it, show the answer on your screen.</li></ul>'],
-                 ['📌','Watch out','<ul><li>A chat command is “silent” → no slash, or the wrong keyboard layout.</li><li>A drop replaces the normal loot of the block — that’s expected.</li><li>Students should keep working in <b>one</b> data pack (the one with the recipe).</li><li>A ritual command doesn’t work → remove the slash, use @a, save, and enter the world again.</li></ul>'],
-                 ['⚙️','Technical aspects','<ul><li>Same world as Lesson 1: students open it on the <b>Play</b> tab and appear at their base. If the world is missing, it can be created again with the code.</li><li>Check the drop and the commands in your own data pack before the lesson — the drop only in survival mode.</li><li>Homework: one more law in the same data pack, tested, published, link sent.</li></ul>']] }
         ]},
         { t:'callout', kind:'tip', e:'🗺️', html:'The first Teacher Note of each lesson has the full plan: summary, key result, the timing of each card, your role and the risks. Lesson 1 also has a preparation video. <b>Read all the Teacher Notes before the lesson.</b>' }
       ]},
-      { id:'bo', e:'📘', title:'Review the lessons in Backoffice', blocks:[
-        { t:'p', html:'Before the check, open the course in Backoffice and read through the lessons at your own pace — the activity cards and the Teacher Notes are all there. Nothing is timed.' },
+      { id:'bo', e:'📘', title:'Review the first lesson in Backoffice', blocks:[
+        { t:'p', html:'Before the check, open the course in Backoffice and read through the first lesson at your own pace — the activity cards and the Teacher Notes are all there. Nothing is timed.' },
         { t:'link', href:'https://bo.kodland.org/courses/2227', e:'📘', title:'Open the course in Backoffice', small:'[2227] Minecraft CraftForge Intermediate — the lessons and their Teacher Notes' },
         { t:'callout', kind:'warn', e:'🔄', html:'The lesson content in Backoffice will keep being updated with feedback from students and tutors. Whenever something changes, you’ll be notified in advance so you can prepare the lesson.' }
       ]}
@@ -199,7 +193,7 @@ COURSE.modules = [
           ['Copy link','When “Published! It is on your profile.” appears, click <b>Copy link</b>, then <b>Done</b>, and paste the link into the lesson card on the platform (“Link to my Law in Kodland Sparks”).'],
           ['Lost the link?','<b>Open on Sparks</b> (in the dialog or at the top of the editor) opens the project page on the student’s profile: the link is the address in the browser bar.'],
           ['Two different steps','Publishing in Sparks and sending the link on the Kodland platform are <b>two different steps</b>. Check in Backoffice that the links really arrived.'],
-          ['Each update is published again','When the student adds a law (homework, Lesson 2), they save, test, and publish the update again.']
+          ['Each update is published again','When the student adds a law, they save, test, and publish the update again.']
         ]},
         { t:'sim', flag:'mcPublish', src:'minecraft-publish/Minecraft_Publish.html?flow=datapack', e:'⚡', badge:'Simulation', title:'Publish a data pack in Kodland Sparks', text:'A replica of the Kodland Launcher and the lesson card: as a student, you publish a data pack, copy its link, paste it into the card on the platform, fix a link that doesn’t open and find a link that wasn’t copied. It takes about 4 minutes. The module check unlocks when you finish.' }
       ]},
@@ -208,9 +202,6 @@ COURSE.modules = [
           ['💾','The data pack doesn’t save','Check that all three parts of the form are filled in: where the item is made, what goes in, and what comes out.'],
           ['🔁','The law doesn’t work after an edit','Click <b>Save</b>, exit the world and enter it again — laws are applied when you enter.'],
           ['🧩','The recipe doesn’t craft','The items aren’t in the same layout as in the form, or the student is crafting in the inventory instead of on a crafting table.'],
-          ['⌨️','A chat command is “silent”','Check the slash at the start and the keyboard layout: the slash must be the Latin one. Spaces as in the hint.'],
-          ['💎','The drop doesn’t drop','In creative mode nothing drops: <code>/gamemode survival</code>, then break exactly the block chosen in the form. Afterwards, <code>/gamemode creative</code>.'],
-          ['⚡','A command from the data pack doesn’t work','Remove the slash at the start of the line and use <b>@a</b>, as on the card. Save and enter the world again.'],
           ['🔒','The link doesn’t open','“Who can see it?” was not <b>Everyone</b>. Publish again with Everyone — the link then opens without logging in.'],
           ['🔗','The student closed the window without copying the link','Click <b>Open on Sparks</b> at the top of the data pack editor: the project page opens, and the link is the address in the browser bar.']
         ]}

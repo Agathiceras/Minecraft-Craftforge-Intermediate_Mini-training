@@ -88,9 +88,9 @@ COURSE.notes = [
 /* ---------------- Modules ---------------- */
 COURSE.modules = [
   { id:'m1', n:1, e:'📜', color:'#0EA5E9', title:'Kursun içeriği',
-    desc:'Kursun genel bilgileri, öğrencinin kazanımları ve Modül 1’in ilk dersleri.',
-    obj:'Minecraft CraftForge Intermediate’ın ilk derslerine hazırlan. Bu derslerde 10–12 yaş öğrenciler bir data pack içinde Minecraft dünyası için ilk yasalarını oluşturur — bir tarif, bir drop ve dünyaya girişte çalışan komutlar — ve bunları Kodland Sparks’ta yayınlar.',
-    offer:[['🧱','Kursun genel bilgilerini ve öğrencinin kazanımlarını öğren.'],['📖','İlk derslerin her birinde ne olduğunu öğren.'],['📦','Data pack’in ne olduğunu ve öğrencilerin onunla nasıl çalıştığını anla.'],['📘','Dersleri ve öğretmen notlarını Backoffice’te gözden geçir.']],
+    desc:'Kursun genel bilgileri, öğrencinin kazanımları ve Modül 1’in ilk dersi.',
+    obj:'Minecraft CraftForge Intermediate’ın ilk dersine hazırlan. Bu derste 10–12 yaş öğrenciler Minecraft dünyası için ilk yasalarını oluşturur — bir data pack içinde bir tarif — ve bunu oyunda test edip Kodland Sparks’ta yayınlar.',
+    offer:[['🧱','Kursun genel bilgilerini ve öğrencinin kazanımlarını öğren.'],['📖','İlk derste ne olduğunu öğren.'],['📦','Data pack’in ne olduğunu ve öğrencilerin onunla nasıl çalıştığını anla.'],['📘','İlk dersi ve öğretmen notlarını Backoffice’te gözden geçir.']],
     sections:[
       { id:'ov', e:'🧱', title:'Kurs', blocks:[
         { t:'meta', items:[['🧒','Yaş','10–12'],['⏱️','Ders','90 dk'],['📚','Program','40 ders · 10 modül'],['🐍','Dil','Python']] },
@@ -112,8 +112,8 @@ COURSE.modules = [
           ['🧠','Hayat becerileri','Yaratıcılık, takım çalışması (birbirinin projelerini test etmek), iletişim ve eleştirel düşünme: hataları bulmak ve Sparks AI’ın cevaplarını kopyalamak yerine değerlendirmek.']
         ]}
       ]},
-      { id:'les', e:'📖', title:'İlk dersler', blocks:[
-        { t:'p', html:'Modül 1, <b>“Dünyanın Kodu. İlk Programlar ve Dünya Yasaları”</b>, <b>“Kod Anıtı”</b> projesiyle biter. İlk iki ders <b>bir data pack içindeki dünya yasaları</b> hakkındadır; Python programları hemen ardından başlar. Her dersi aç ve bilmen gerekenleri, ana sonucu, rolünü ve dikkat edilmesi gerekenleri oku.' },
+      { id:'les', e:'📖', title:'İlk ders', blocks:[
+        { t:'p', html:'Modül 1, <b>“Dünyanın Kodu. İlk Programlar ve Dünya Yasaları”</b>, <b>“Kod Anıtı”</b> projesiyle biter. İlk ders <b>bir data pack içindeki dünya yasaları</b> hakkındadır. Onu aç ve bilmen gerekenleri, ana sonucu, rolünü ve dikkat edilmesi gerekenleri oku.' },
         { t:'lessons', key:'m1', items:[
           { tab:'M1D1', e:'📜', h:'1. Ders — Dünyanın Kodundaki İlk İz', p:'Kursun ilk dersi (8 kart ve ödev). Öğrenciler launcher’ı başlatır, grupla tanışır, yasa eğitmenini dener, Nether üzerinden dünyaya girer, bir data pack içinde ilk yasalarını — bir tarif — oluşturur, test eder ve Sparks’ta yayınlar. Ardından Sparks AI ile bir üs planlar ve onu inşa ederler.',
             acc:[['📚','Bilmen gerekenler','<ul><li><b>Data pack</b>, dünya için bir yasalar bütünüdür. Yasalar dünyanın dışında, launcher stüdyosunda oluşturulur ve dünya onları her girişte çalıştırır.</li><li>Yasa türleri: <b>tarif</b>, <b>drop</b>, girişte çalışan <b>komut</b>, <b>başarım</b>. Bugün: bir tarif.</li><li>Yol: <b>Esc</b> ve kaydederek dünyadan çık → <b>Create → Data packs → Create data pack → Empty</b> → <b>Add → Recipe</b> → çalışma masası, eşyalar, sonuç → <b>Save</b>.</li><li>Dünya kodu <b>Play</b> sekmesine girilir. Öğrenciler yaratıcı modda inşa eder.</li></ul>'],
@@ -121,17 +121,11 @@ COURSE.modules = [
                  ['🧑‍🏫','Senin rolün','<ul><li>Oyun inerken grubu tanı; ders boyunca isimleri kullan.</li><li>Hedefi yüksek sesle söyle: “Bugün herkes Minecraft için kendi yasasını oluşturacak, oyunda test edecek ve portfolyosunda yayınlayacak.”</li><li>Tarifleri dikte etme: fikirler farklı olmalı — projeyi kişisel yapan budur. Sor: “Neden bu eşya? Kimin işine yarayacak?”</li><li><b>Planlı kontrol:</b> çalışma masasından bir eşyayı çıkar → ödül kaybolur. Nedenini sor, sonra dört soruyu kullan. Yalnızca ilk seferde başaranı değil, nedeni bulan öğrenciyi de öv.</li></ul>'],
                  ['📌','Dikkat edilmesi gerekenler','<ul><li>Data pack kaydedilmiyor → formun üç bölümünden biri boş.</li><li>Yasa çalışmıyor → dünya açıkken kaydedilmiş: çık ve tekrar gir.</li><li>Tarif üretilmiyor → eşyalar formdaki düzende değil veya çalışma masası yerine envanterde üretilmiş.</li><li>Bağlantı açılmıyor → “Who can see it?” <b>Everyone</b> değildi: tekrar yayınla.</li></ul>'],
                  ['⚙️','Teknik konular','<ul><li>Bir gün önce launcher bağlantılarını grup sohbetine gönder.</li><li>Tüm yolu kendin dene: dünya kodu → kıyı → kaydederek çık → tarifli data pack → dünyaya geri dön → çalışma masası → ödül → Sparks’ta yayınla.</li><li>Dünya kodu: <b>Welcome to KodlandCraft</b>.</li><li>Ödev: bir yasa daha eklemek (tarifi değiştirmek, yeni bir tarif ya da bir komut/drop), test etmek, güncellemeyi yayınlamak ve bağlantıyı göndermek.</li></ul>']] },
-          { tab:'M1D2', e:'🏘️', h:'2. Ders — Meydana Giden Yol', p:'Öğrenciler <b>komut</b> ile <b>yasa</b> arasındaki farkı öğrenir. Sohbete yazılan bir komut dünyayı hemen ama yalnızca bir kez değiştirir; data pack’teki bir yasa ise hatırlanır ve dünya tarafından kendiliğinden çalıştırılır. Aynı data pack’e iki yeni yasa türü eklerler: bir <b>drop</b> ve <b>dünyaya girişte çalışan komutlar</b>.',
-            acc:[['📚','Bilmen gerekenler','<ul><li>Sohbet komutları eğik çizgiyle başlar: <code>/time set day</code>, <code>/give @s diamond 4</code>, <code>/effect give @s speed 15 1</code>.</li><li>Deney: 15 saniyelik hız sona erer ve dünya komutu “unutur”. Komut bir kez söylenir; yasa ise her zaman geçerlidir.</li><li><b>Drop</b>: Edit → Add → <b>+ Drop</b> → blok → ne düşeceği → Save. <b>Yaratıcı modda hiçbir şey düşmez</b> (planlı an): <code>/gamemode survival</code> ile test et, sonra <code>/gamemode creative</code> ile geri dön.</li><li><b>Girişte çalışan komutlar</b>: Add → <b>+ Command</b>; <b>eğik çizgi olmadan</b> ve @s yerine <b>@a</b> ile yazılır. Dünyaya her girişte çalışırlar.</li></ul>'],
-                 ['🎯','Ana sonuç','<ul><li>İki sohbet komutu çalıştı (gündüz ve elmaslar) ve öğrenci hızın neden sona erdiğini açıklıyor.</li><li>🏁 <b>Çalışan bir drop içeren güncellenmiş data pack’in bağlantısı</b> yaklaşık 00:45’e kadar görevde.</li><li>En az iki komut içeren, yeniden girilerek test edilmiş bir giriş ritüeli; öğrenci Sparks’ın tavsiyesinden neyi alacağına karar vermiş.</li></ul>'],
-                 ['🧑‍🏫','Senin rolün','<ul><li>Ödevle başla: 2–3 öğrenci hangi yasayı eklediğini ve nasıl kontrol ettiğini gösterir.</li><li>Komutları hemen dikte etme: önce ipucuyla denemelerine izin ver, sonra komutun tamamını aç.</li><li>Drop ve ritüelden önce nereden başlanacağını kendi ekranında kısaca göster.</li><li>Neden hiçbir şeyin düşmediğini bulmaları için bir dakika ver; kimse bulamazsa cevabı kendi ekranında göster.</li></ul>'],
-                 ['📌','Dikkat edilmesi gerekenler','<ul><li>Bir sohbet komutu “sessiz” → eğik çizgi yok veya klavye düzeni yanlış.</li><li>Drop, bloğun normal ganimetinin yerini alır — bu beklenen bir durumdur.</li><li>Öğrenciler <b>tek bir</b> data pack’te (tarifin olduğu) çalışmaya devam etmelidir.</li><li>Bir ritüel komutu çalışmıyor → eğik çizgiyi kaldır, @a kullan, kaydet ve dünyaya tekrar gir.</li></ul>'],
-                 ['⚙️','Teknik konular','<ul><li>1. Dersle aynı dünya: öğrenciler onu <b>Play</b> sekmesinde açar ve üslerinde belirir. Dünya kaybolmuşsa kodla yeniden oluşturulabilir.</li><li>Dersten önce drop’u ve komutları kendi data pack’inde kontrol et — drop’u yalnızca hayatta kalma modunda.</li><li>Ödev: aynı data pack’e bir yasa daha, test edilmiş, yayınlanmış, bağlantısı gönderilmiş.</li></ul>']] }
         ]},
         { t:'callout', kind:'tip', e:'🗺️', html:'Her dersin ilk öğretmen notunda tam plan yer alır: özet, ana sonuç, her kartın zamanlaması, senin rolün ve riskler. 1. Derste ayrıca bir hazırlık videosu vardır. <b>Dersten önce tüm öğretmen notlarını oku.</b>' }
       ]},
-      { id:'bo', e:'📘', title:'Dersleri Backoffice’te gözden geçir', blocks:[
-        { t:'p', html:'Kontrolden önce kursu Backoffice’te aç ve dersleri kendi hızında oku — etkinlik kartları ve öğretmen notları orada. Süre sınırı yok.' },
+      { id:'bo', e:'📘', title:'İlk dersi Backoffice’te gözden geçir', blocks:[
+        { t:'p', html:'Kontrolden önce kursu Backoffice’te aç ve ilk dersi kendi hızında oku — etkinlik kartları ve öğretmen notları orada. Süre sınırı yok.' },
         { t:'link', href:'https://bo.kodland.org/courses/2233', e:'📘', title:'Kursu Backoffice’te aç', small:'[2233] Minecraft CraftForge Intermediate — dersler ve öğretmen notları' },
         { t:'callout', kind:'warn', e:'🔄', html:'Backoffice’teki ders içerikleri, öğrencilerden ve eğitmenlerden gelen geri bildirimlere göre güncellenmeye devam edecek. Bir değişiklik olduğunda, dersi hazırlayabilmen için sana önceden haber verilecek.' }
       ]}
@@ -198,7 +192,7 @@ COURSE.modules = [
           ['Copy link','“Published! It is on your profile.” mesajı görününce <b>Copy link</b>’e, ardından <b>Done</b>’a tıkla ve bağlantıyı platformdaki ders kartına yapıştır (“Kodland Sparks’taki Yasamın bağlantısı”).'],
           ['Bağlantıyı mı kaybettin?','<b>Open on Sparks</b> (pencerede veya düzenleyicinin üstünde), öğrencinin profilindeki proje sayfasını açar: bağlantı, tarayıcı çubuğundaki adrestir.'],
           ['İki farklı adım','Sparks’ta yayınlamak ve Kodland platformunda bağlantıyı göndermek <b>iki farklı adımdır</b>. Bağlantıların gerçekten ulaştığını Backoffice’te kontrol et.'],
-          ['Her güncelleme yeniden yayınlanır','Öğrenci bir yasa eklediğinde (ödev, 2. Ders) kaydeder, test eder ve güncellemeyi yeniden yayınlar.']
+          ['Her güncelleme yeniden yayınlanır','Öğrenci bir yasa eklediğinde kaydeder, test eder ve güncellemeyi yeniden yayınlar.']
         ]},
         { t:'sim', flag:'mcPublish', src:'minecraft-publish/Minecraft_Publish.html?flow=datapack', e:'⚡', badge:'Simülasyon', title:'Kodland Sparks’ta bir data pack yayınla', text:'Kodland Launcher’ın ve ders kartının bir kopyası: öğrenci olarak bir data pack yayınlar, bağlantısını kopyalar, platformdaki karta yapıştırır, açılmayan bir bağlantıyı düzeltir ve kopyalanmamış bir bağlantıyı bulursun. Yaklaşık 4 dakika sürer. Bitirdiğinde modül kontrolü açılır.' }
       ]},
@@ -207,9 +201,6 @@ COURSE.modules = [
           ['💾','Data pack kaydedilmiyor','Formun üç bölümünün de dolu olduğunu kontrol et: eşyanın nerede üretildiği, içine ne girdiği ve ne çıktığı.'],
           ['🔁','Yasa bir düzenlemeden sonra çalışmıyor','<b>Save</b>’e tıkla, dünyadan çık ve tekrar gir — yasalar dünyaya girerken uygulanır.'],
           ['🧩','Tarif üretilmiyor','Eşyalar formdaki düzende değil veya öğrenci çalışma masası yerine envanterde üretim yapıyor.'],
-          ['⌨️','Bir sohbet komutu “sessiz”','Baştaki eğik çizgiyi ve klavye düzenini kontrol et: eğik çizgi Latin klavyedeki olmalı. Boşluklar ipucundaki gibi olmalı.'],
-          ['💎','Drop düşmüyor','Yaratıcı modda hiçbir şey düşmez: <code>/gamemode survival</code>, ardından tam olarak formda seçilen bloğu kır. Sonra <code>/gamemode creative</code>.'],
-          ['⚡','Data pack’teki bir komut çalışmıyor','Satırın başındaki eğik çizgiyi kaldır ve karttaki gibi <b>@a</b> kullan. Kaydet ve dünyaya tekrar gir.'],
           ['🔒','Bağlantı açılmıyor','“Who can see it?” <b>Everyone</b> değildi. Everyone ile tekrar yayınla — bağlantı artık giriş yapmadan açılır.'],
           ['🔗','Öğrenci bağlantıyı kopyalamadan pencereyi kapattı','Data pack düzenleyicisinin üstündeki <b>Open on Sparks</b>’a tıkla: proje sayfası açılır ve bağlantı, tarayıcı çubuğundaki adrestir.']
         ]}

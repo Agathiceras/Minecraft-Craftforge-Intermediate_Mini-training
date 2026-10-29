@@ -89,9 +89,9 @@ COURSE.notes = [
 /* ---------------- Modules ---------------- */
 COURSE.modules = [
   { id:'m1', n:1, e:'📜', color:'#0EA5E9', title:'Treści kursu',
-    desc:'Ogólne informacje o kursie, co osiąga uczeń i pierwsze lekcje modułu 1.',
-    obj:'Przygotuj się do poprowadzenia pierwszych lekcji Minecraft CraftForge Intermediate. Uczniowie w wieku 10–12 lat tworzą na nich pierwsze prawa świata Minecrafta w paczce danych — recepturę, drop i polecenia przy wejściu do świata — i publikują je w Kodland Sparks.',
-    offer:[['🧱','Poznasz ogólne informacje o kursie i to, co osiąga uczeń.'],['📖','Dowiesz się, co dzieje się na każdej z pierwszych lekcji.'],['📦','Zrozumiesz, czym jest paczka danych i jak uczniowie z nią pracują.'],['📘','Przejrzysz lekcje i ich Teacher Notes w Backoffice.']],
+    desc:'Ogólne informacje o kursie, co osiąga uczeń i pierwsza lekcja modułu 1.',
+    obj:'Przygotuj się do poprowadzenia pierwszej lekcji Minecraft CraftForge Intermediate. Uczniowie w wieku 10–12 lat tworzą na niej swoje pierwsze prawo świata Minecrafta — recepturę w paczce danych — testują je w grze i publikują w Kodland Sparks.',
+    offer:[['🧱','Poznasz ogólne informacje o kursie i to, co osiąga uczeń.'],['📖','Dowiesz się, co dzieje się na pierwszej lekcji.'],['📦','Zrozumiesz, czym jest paczka danych i jak uczniowie z nią pracują.'],['📘','Przejrzysz pierwszą lekcję i jej Teacher Notes w Backoffice.']],
     sections:[
       { id:'ov', e:'🧱', title:'Kurs', blocks:[
         { t:'meta', items:[['🧒','Wiek','10–12 lat'],['⏱️','Lekcja','90 min'],['📚','Program','40 lekcji · 10 modułów'],['🐍','Język','Python']] },
@@ -113,8 +113,8 @@ COURSE.modules = [
           ['🧠','Umiejętności na całe życie','Kreatywność, praca w zespole (testowanie projektów innych), komunikacja i krytyczne myślenie: szukanie błędów i ocenianie odpowiedzi Sparks AI zamiast ich kopiowania.']
         ]}
       ]},
-      { id:'les', e:'📖', title:'Pierwsze lekcje', blocks:[
-        { t:'p', html:'Moduł 1, <b>„Kod świata. Pierwsze programy i prawa świata”</b>, kończy się projektem <b>„Pomnik kodu”</b>. Pierwsze dwie lekcje dotyczą <b>praw świata w paczce danych</b>; programy w Pythonie zaczynają się zaraz po nich. Otwórz każdą lekcję i przeczytaj, co musisz wiedzieć, jaki jest kluczowy wynik, jaka jest Twoja rola i na co uważać.' },
+      { id:'les', e:'📖', title:'Pierwsza lekcja', blocks:[
+        { t:'p', html:'Moduł 1, <b>„Kod świata. Pierwsze programy i prawa świata”</b>, kończy się projektem <b>„Pomnik kodu”</b>. Pierwsza lekcja dotyczy <b>praw świata w paczce danych</b>. Otwórz ją i przeczytaj, co musisz wiedzieć, jaki jest kluczowy wynik, jaka jest Twoja rola i na co uważać.' },
         { t:'lessons', key:'m1', items:[
           { tab:'M1L1', e:'📜', h:'Lekcja 1 — Pierwszy ślad w kodzie świata', p:'Pierwsza lekcja kursu (8 kart i zadanie domowe). Uczniowie uruchamiają launcher, poznają grupę, próbują trenażera praw, wchodzą do świata przez Nether, tworzą w paczce danych swoje pierwsze prawo — recepturę — testują je i publikują w Sparks. Potem z pomocą Sparks AI planują bazę i ją budują.',
             acc:[['📚','Co musisz wiedzieć','<ul><li><b>Paczka danych</b> (data pack) to zestaw praw świata. Prawa tworzy się poza światem, w studiu launchera, a świat wykonuje je za każdym razem, gdy do niego wchodzisz.</li><li>Rodzaje praw: <b>receptura</b>, <b>drop</b>, <b>polecenie</b> przy wejściu, <b>osiągnięcie</b>. Dziś: receptura.</li><li>Ścieżka: <b>Esc</b> i wyjście ze świata z zapisem → <b>Create → Data packs → Create data pack → Empty</b> → <b>Add → Recipe</b> → stół rzemieślniczy, przedmioty, wynik → <b>Save</b>.</li><li>Kod świata wpisuje się w zakładce <b>Play</b>. Uczniowie budują w trybie kreatywnym.</li></ul>'],
@@ -122,17 +122,11 @@ COURSE.modules = [
                  ['🧑‍🏫','Twoja rola','<ul><li>Poznaj grupę, kiedy gra się pobiera; zwracaj się do uczniów po imieniu przez całą lekcję.</li><li>Powiedz cel na głos: „Dziś każdy stworzy własne prawo dla Minecrafta, przetestuje je w grze i opublikuje w portfolio”.</li><li>Nie narzucaj receptur: pomysły powinny być różne — to sprawia, że projekt jest osobisty. Zapytaj: „Dlaczego ten przedmiot? Komu się przyda?”.</li><li><b>Zaplanowany test:</b> usuń jeden przedmiot ze stołu rzemieślniczego → nagroda znika. Zapytaj dlaczego, potem użyj czterech pytań. Chwal ucznia, który znajdzie przyczynę, a nie tylko tego, któremu udało się za pierwszym razem.</li></ul>'],
                  ['📌','Uważaj','<ul><li>Paczka danych się nie zapisuje → jedna z trzech części formularza jest pusta.</li><li>Prawo nie działa → zostało zapisane przy otwartym świecie: wyjdź i wejdź ponownie.</li><li>Receptura nie działa → przedmioty nie są ułożone tak jak w formularzu albo uczeń tworzy w ekwipunku zamiast na stole rzemieślniczym.</li><li>Link się nie otwiera → w „Who can see it?” nie wybrano <b>Everyone</b>: opublikuj ponownie.</li></ul>'],
                  ['⚙️','Aspekty techniczne','<ul><li>Dzień wcześniej wyślij linki do launchera na czat grupy.</li><li>Przejdź całą ścieżkę sam: kod świata → brzeg → wyjście z zapisem → paczka danych z recepturą → powrót do świata → stół rzemieślniczy → nagroda → publikacja w Sparks.</li><li>Kod świata: <b>Welcome to KodlandCraft</b>.</li><li>Zadanie domowe: dodać jeszcze jedno prawo (zmienić recepturę, nowa receptura albo polecenie/drop), przetestować je, opublikować aktualizację i wysłać link.</li></ul>']] },
-          { tab:'M1L2', e:'🏘️', h:'Lekcja 2 — Droga na plac', p:'Uczniowie poznają różnicę między <b>poleceniem</b> a <b>prawem</b>. Polecenie na czacie zmienia świat od razu, ale tylko raz; prawo w paczce danych jest zapamiętane i świat sam je wykonuje. Do tej samej paczki danych dodają dwa nowe rodzaje praw: <b>drop</b> i <b>polecenia przy wejściu do świata</b>.',
-            acc:[['📚','Co musisz wiedzieć','<ul><li>Polecenia na czacie zaczynają się od ukośnika: <code>/time set day</code>, <code>/give @s diamond 4</code>, <code>/effect give @s speed 15 1</code>.</li><li>Eksperyment: szybkość na 15 sekund się kończy, a świat „zapomina” polecenie. Polecenie wydaje się raz; prawo obowiązuje zawsze.</li><li><b>Drop</b>: Edit → Add → <b>+ Drop</b> → blok → co wypada → Save. W <b>trybie kreatywnym nic nie wypada</b> (zaplanowany moment): testuj z <code>/gamemode survival</code>, a potem wróć przez <code>/gamemode creative</code>.</li><li><b>Polecenia przy wejściu</b>: Add → <b>+ Command</b>, wpisywane <b>bez ukośnika</b> i z <b>@a</b> zamiast @s. Wykonują się za każdym razem, gdy wchodzisz do świata.</li></ul>'],
-                 ['🎯','Kluczowy wynik','<ul><li>Dwa polecenia na czacie zadziałały (dzień i diamenty), a uczeń wyjaśnia, dlaczego szybkość się skończyła.</li><li>🏁 <b>Link do zaktualizowanej paczki danych z działającym dropem</b> jest w zadaniu mniej więcej do 00:45.</li><li>Rytuał wejścia z co najmniej dwoma poleceniami, przetestowany ponownym wejściem, a uczeń zdecydował, co wziąć z rady Sparks.</li></ul>'],
-                 ['🧑‍🏫','Twoja rola','<ul><li>Zacznij od zadania domowego: 2–3 uczniów pokazuje, jakie prawo dodali i jak je sprawdzili.</li><li>Nie dyktuj poleceń od razu: najpierw niech spróbują z podpowiedzią, potem odkryj pełne polecenie.</li><li>Przed dropem i rytuałem krótko pokaż na swoim ekranie, od czego zacząć.</li><li>Daj minutę na znalezienie przyczyny, dlaczego nic nie wypadło; jeśli nikt jej nie znajdzie, pokaż odpowiedź na swoim ekranie.</li></ul>'],
-                 ['📌','Uważaj','<ul><li>Polecenie na czacie „milczy” → brak ukośnika albo zły układ klawiatury.</li><li>Drop zastępuje zwykły łup z bloku — tak ma być.</li><li>Uczniowie powinni dalej pracować w <b>jednej</b> paczce danych (tej z recepturą).</li><li>Polecenie rytuału nie działa → usuń ukośnik, użyj @a, zapisz i wejdź do świata ponownie.</li></ul>'],
-                 ['⚙️','Aspekty techniczne','<ul><li>Ten sam świat co na lekcji 1: uczniowie otwierają go w zakładce <b>Play</b> i pojawiają się w swojej bazie. Jeśli świata brakuje, można go utworzyć ponownie z kodem.</li><li>Przed lekcją sprawdź drop i polecenia we własnej paczce danych — drop tylko w trybie przetrwania.</li><li>Zadanie domowe: jeszcze jedno prawo w tej samej paczce danych, przetestowane, opublikowane, link wysłany.</li></ul>']] }
         ]},
         { t:'callout', kind:'tip', e:'🗺️', html:'Pierwsza Teacher Note każdej lekcji zawiera pełny plan: podsumowanie, kluczowy wynik, czas każdej karty, Twoją rolę i ryzyka. Lekcja 1 ma też film przygotowawczy. <b>Przeczytaj wszystkie Teacher Notes przed lekcją.</b>' }
       ]},
-      { id:'bo', e:'📘', title:'Przejrzyj lekcje w Backoffice', blocks:[
-        { t:'p', html:'Przed sprawdzianem otwórz kurs w Backoffice i przejrzyj lekcje we własnym tempie — są tam wszystkie karty aktywności i Teacher Notes. Nie ma limitu czasu.' },
+      { id:'bo', e:'📘', title:'Przejrzyj pierwszą lekcję w Backoffice', blocks:[
+        { t:'p', html:'Przed sprawdzianem otwórz kurs w Backoffice i przejrzyj pierwszą lekcję we własnym tempie — są tam wszystkie karty aktywności i Teacher Notes. Nie ma limitu czasu.' },
         { t:'link', href:'https://bo.kodland.org/courses/2229', e:'📘', title:'Otwórz kurs w Backoffice', small:'[2229] Minecraft CraftForge Intermediate — lekcje i ich Teacher Notes' },
         { t:'callout', kind:'warn', e:'🔄', html:'Treści lekcji w Backoffice będą dalej aktualizowane na podstawie opinii uczniów i tutorów. Gdy coś się zmieni, dostaniesz informację z wyprzedzeniem, żeby przygotować lekcję.' }
       ]}
@@ -199,7 +193,7 @@ COURSE.modules = [
           ['Copy link','Gdy pojawi się „Published! It is on your profile.”, kliknij <b>Copy link</b>, potem <b>Done</b>, i wklej link do karty lekcji na platformie („Link do mojego prawa w Kodland Sparks”).'],
           ['Zgubiony link?','<b>Open on Sparks</b> (w oknie dialogowym lub na górze edytora) otwiera stronę projektu na profilu ucznia: link to adres w pasku przeglądarki.'],
           ['Dwa różne kroki','Publikacja w Sparks i wysłanie linku na platformie Kodland to <b>dwa różne kroki</b>. Sprawdź w Backoffice, czy linki naprawdę dotarły.'],
-          ['Każdą aktualizację publikuje się ponownie','Gdy uczeń dodaje prawo (zadanie domowe, lekcja 2), zapisuje, testuje i ponownie publikuje aktualizację.']
+          ['Każdą aktualizację publikuje się ponownie','Gdy uczeń dodaje prawo, zapisuje, testuje i ponownie publikuje aktualizację.']
         ]},
         { t:'sim', flag:'mcPublish', src:'minecraft-publish/Minecraft_Publish.html?flow=datapack', e:'⚡', badge:'Symulacja', title:'Opublikuj paczkę danych w Kodland Sparks', text:'Replika Kodland Launcher i karty lekcji: jako uczeń publikujesz paczkę danych, kopiujesz jej link, wklejasz go do karty na platformie, naprawiasz link, który się nie otwiera, i odnajdujesz link, który nie został skopiowany. Zajmuje to ok. 4 minut. Sprawdzian modułu odblokuje się, gdy skończysz.' }
       ]},
@@ -208,9 +202,6 @@ COURSE.modules = [
           ['💾','Paczka danych się nie zapisuje','Sprawdź, czy wypełnione są wszystkie trzy części formularza: gdzie powstaje przedmiot, co wchodzi i co wychodzi.'],
           ['🔁','Prawo nie działa po edycji','Kliknij <b>Save</b>, wyjdź ze świata i wejdź ponownie — prawa są stosowane przy wejściu.'],
           ['🧩','Receptura nie działa','Przedmioty nie są ułożone tak jak w formularzu albo uczeń tworzy w ekwipunku zamiast na stole rzemieślniczym.'],
-          ['⌨️','Polecenie na czacie „milczy”','Sprawdź ukośnik na początku i układ klawiatury: ukośnik musi być łaciński. Spacje jak w podpowiedzi.'],
-          ['💎','Drop nie wypada','W trybie kreatywnym nic nie wypada: <code>/gamemode survival</code>, potem zniszcz dokładnie ten blok, który wybrano w formularzu. Następnie <code>/gamemode creative</code>.'],
-          ['⚡','Polecenie z paczki danych nie działa','Usuń ukośnik na początku linii i użyj <b>@a</b>, tak jak na karcie. Zapisz i wejdź do świata ponownie.'],
           ['🔒','Link się nie otwiera','W „Who can see it?” nie wybrano <b>Everyone</b>. Opublikuj ponownie z Everyone — wtedy link otwiera się bez logowania.'],
           ['🔗','Uczeń zamknął okno, nie kopiując linku','Kliknij <b>Open on Sparks</b> na górze edytora paczki danych: otworzy się strona projektu, a link to adres w pasku przeglądarki.']
         ]}
