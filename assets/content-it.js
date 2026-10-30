@@ -117,7 +117,7 @@ COURSE.modules = [
         { t:'lessons', key:'m1', items:[
           { tab:'M1L1', e:'📜', h:'Lezione 1 — La prima traccia nel codice del mondo', p:'La prima lezione del corso (8 schede più i compiti). Gli studenti avviano il launcher, conoscono il gruppo, provano il simulatore di leggi, entrano nel mondo attraverso il Nether, creano la loro prima legge — una ricetta — in un data pack, la testano e la pubblicano su Sparks. Poi progettano una base con Sparks AI e la costruiscono.',
             acc:[['📚','Che cosa devi sapere','<ul><li>Un <b>data pack</b> è un insieme di leggi per il mondo. Le leggi si creano fuori dal mondo, nello studio del launcher, e il mondo le esegue ogni volta che entri.</li><li>Tipi di leggi: <b>ricetta</b>, <b>drop</b>, <b>comando</b> all’ingresso, <b>progresso</b>. Oggi: una ricetta.</li><li>Percorso: <b>Esc</b> e uscire dal mondo salvando → <b>Create → Data packs → Create data pack → Empty</b> → <b>Add → Recipe</b> → banco da lavoro, oggetti, risultato → <b>Save</b>.</li><li>Il codice del mondo si inserisce nella scheda <b>Play</b>. Gli studenti costruiscono in modalità creativa.</li></ul>'],
-                 ['🎯','Risultato chiave','<ul><li>Entro il minuto 45 circa, tutti devono aver salvato un data pack con la propria ricetta.</li><li>🏁 Il data pack è <b>pubblicato su Sparks e il suo link è nella scheda della lezione</b> (scheda «Firma sotto la legge», entro il minuto 60 circa). Questa fase non si accorcia mai.</li><li>Lo studente ha dato all’oggetto un nome proprio e lo ha creato su un banco da lavoro nel mondo.</li></ul>'],
+                 ['🎯','Risultato chiave','<ul><li>Entro il minuto 45 circa, tutti devono aver salvato un data pack con la propria ricetta.</li><li>🏁 Il data pack è <b>pubblicato su Sparks e il suo link è nella scheda della lezione</b> (scheda «Firma la legge», entro il minuto 60 circa). Questa fase non si accorcia mai.</li><li>Lo studente ha dato all’oggetto un nome proprio e lo ha creato su un banco da lavoro nel mondo.</li></ul>'],
                  ['🧑‍🏫','Il tuo ruolo','<ul><li>Presentati e fai conoscenza con il gruppo mentre il gioco si scarica; usa i nomi per tutta la lezione.</li><li>Di’ ad alta voce l’obiettivo: «Oggi ognuno di voi creerà la propria legge per Minecraft, la testerà nel gioco e la pubblicherà nel portfolio».</li><li>Non imporre le ricette: le idee devono essere diverse — è questo che rende personale il progetto. Chiedi: «Perché questo oggetto? A chi servirà?»</li><li><b>Verifica programmata:</b> togli un oggetto dal banco da lavoro → la ricompensa sparisce. Chiedi perché, poi usa le quattro domande. Loda lo studente che trova la causa, non solo quello che ci riesce al primo colpo.</li></ul>'],
                  ['📌','Attenzione','<ul><li>Il data pack non si salva → una delle tre parti del modulo della ricetta è vuota.</li><li>La legge non funziona → è stata salvata con il mondo aperto: esci ed entra di nuovo.</li><li>La ricetta non funziona → gli oggetti non sono disposti come nel modulo della ricetta, oppure lo studente li combina nell’inventario invece che su un banco da lavoro.</li><li>Il link non si apre → in «Who can see it?» non era selezionato <b>Everyone</b>: pubblica di nuovo.</li></ul>'],
                  ['⚙️','Aspetti tecnici','<ul><li>Il giorno prima, invia i link del launcher nella chat del gruppo.</li><li>Fai tu, in prima persona, tutto il percorso: codice del mondo → riva → uscire salvando → data pack con una ricetta → di nuovo nel mondo → banco da lavoro → ricompensa → pubblicazione su Sparks.</li><li>Codice del mondo: <b>Welcome to KodlandCraft</b>.</li><li>Compiti: aggiungere un’altra legge (modificare la ricetta, una nuova ricetta, oppure un comando/drop), testarla, pubblicare l’aggiornamento e inviare il link.</li></ul>']] },
@@ -147,7 +147,7 @@ COURSE.modules = [
       ]},
       { id:'launcher', e:'🟩', title:'Il Kodland Launcher', blocks:[
         { t:'p', html:'Gli studenti aprono Minecraft tramite il <b>Kodland Launcher</b>: scarica il gioco, apre il mondo del corso ed è il posto dove creano i data pack e li pubblicano su Sparks. Devi averlo installato e pronto sul tuo computer prima della tua prima lezione.' },
-        { t:'callout', kind:'warn', e:'🔑', html:'<b>Le tue credenziali:</b> per scaricare il launcher e accedere usi le <b>stesse credenziali di Kodland Sparks</b>. Te le fornisce il <b>reparto Operations o Teaching</b>. Gli studenti accedono con il proprio account Kodland — non ne serve uno nuovo.' },
+        { t:'callout', kind:'warn', e:'🔑', html:'<b>Le tue credenziali:</b> per scaricare il launcher non servono credenziali. Per accedere, invece, usi le <b>stesse credenziali di Kodland Sparks</b>, che ti fornisce il <b>reparto Operations o Teaching</b>. Gli studenti accedono con lo stesso account che usano sulla piattaforma Kodland — non ne serve uno nuovo.' },
         { t:'link', href:'https://portfolio.kodland.org/launcher/download#guide', e:'⬇️', title:'Pagina di download e guida ufficiale', small:'portfolio.kodland.org/launcher/download — Windows e Mac' },
         { t:'cards', cols:2, items:[
           ['🪟','Windows 10 / 11','<ol><li>Scarica il programma di installazione.</li><li>Apri il file scaricato.</li><li>Nella schermata blu di avviso, clicca su <b>More info → Run anyway</b>, poi segui l’installazione.</li></ol>'],
@@ -185,7 +185,7 @@ COURSE.modules = [
         ]}
       ]},
       { id:'publish', e:'📤', title:'Pubblicare il data pack su Kodland Sparks', blocks:[
-        { t:'p', html:'Sparks è il portfolio degli studenti: lì sono raccolti tutti i progetti del corso, e lì si trova l’assistente IA. Gli studenti ci tornano in ogni lezione per pubblicare e chiedere suggerimenti. Il data pack si pubblica <b>dall’editor del launcher</b>:' },
+        { t:'p', html:'Sparks è il portfolio degli studenti: lì sono raccolti tutti i progetti del corso, e lì si trova Sparks AI. Gli studenti ci tornano in ogni lezione per pubblicare e chiedere suggerimenti. Il data pack si pubblica <b>dall’editor del launcher</b>:' },
         { t:'steps', items:[
           ['Publish, accanto a Save','Nel launcher, <b>Create → Data packs → Edit</b> sul data pack, poi <b>Publish</b>, accanto al pulsante viola <b>Save</b>.'],
           ['Nome e «Who can see it?» → Everyone','In «Publish to your profile», scrivi il nome e scegli <b>Everyone</b>: solo così anche gli altri possono aprire il link senza accedere all’account dello studente.'],
@@ -207,7 +207,7 @@ COURSE.modules = [
       ]},
       { id:'check', e:'✅', title:'Checklist tecnica per ogni lezione', blocks:[
         { t:'check', title:'✅ La mia checklist tecnica', groups:[
-          { h:'☑️ Prima della lezione', items:['Ho letto tutte le note per il tutor della lezione e ho guardato il video di preparazione.','Il mio launcher è installato, ho effettuato l’accesso e ho fatto il percorso della lezione nel mio data pack.','Prima della Lezione 1, ho inviato i link del launcher nella chat del gruppo.'] },
+          { h:'☑️ Prima della lezione', items:['Ho letto tutte le note per il tutor della lezione e, per la Lezione 1, ho guardato il video di preparazione.','Il mio launcher è installato, ho effettuato l’accesso e ho fatto il percorso della lezione nel mio data pack.','Prima della Lezione 1, ho inviato i link del launcher nella chat del gruppo.'] },
           { h:'🎬 Durante la lezione', items:['Ho fatto il controllo del collegamento e del launcher prima dei contenuti.','Nei primi minuti ho mostrato il risultato finale e ho detto l’obiettivo della lezione.'] },
           { h:'📤 Alla fine della lezione', items:['Ho protetto gli ultimi 7–10 minuti per pubblicare, mostrare i lavori e dare feedback.','Tutti hanno inviato il link al data pack pubblicato nella scheda della lezione.','Ho aperto alcuni link per controllare che funzionino.'] }
         ]}
@@ -238,9 +238,9 @@ COURSE.quiz = {
     { q:'Quando fai il controllo del collegamento e del launcher?',
       o:['All’inizio della lezione, prima dei contenuti, così il gioco si scarica mentre conosci il gruppo.','A metà lezione, quando gli studenti hanno bisogno di Minecraft.','Alla fine, così non toglie tempo alla lezione.'],
       a:0, e:'Prima dei contenuti: il gioco si scarica mentre conosci il gruppo.' },
-    { q:'Quali credenziali usi per scaricare il Kodland Launcher e accedere?',
+    { q:'Quali credenziali usi per accedere al Kodland Launcher?',
       o:['Un nuovo account che crei tu.','Le stesse credenziali di Kodland Sparks, fornite dal reparto Operations o Teaching.','L’account di uno studente.'],
-      a:1, e:'Il launcher usa le tue credenziali di Kodland Sparks, fornite dal reparto Operations o Teaching.' },
+      a:1, e:'Per scaricare il launcher non servono credenziali; per accedere usi le tue credenziali di Kodland Sparks, fornite dal reparto Operations o Teaching.' },
     { q:'Dove trova lo studente il link al data pack pubblicato?',
       o:['In un commento nel launcher.','In «Publish to your profile»: Copy link (oppure Open on Sparks e copia l’indirizzo dalla barra del browser).','Nella scheda Play del launcher.'],
       a:1, e:'Copy link subito dopo la pubblicazione; se il link è andato perso, Open on Sparks mostra la pagina del progetto, e il suo indirizzo è il link.' },
